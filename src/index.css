@@ -2,67 +2,152 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+body {
+  background-color: #23252c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------------- */
+/* Typography             */
+/* ---------------------- */
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/* ---------------------- */
+/* card            */
+/* ---------------------- */
+
+.card {
+  @apply text-[#dcdcdc]
+      bg-[#1a1b21]
+      rounded-3xl
+      w-[22em]
+      m-[3em]
+      shadow-lg;
+}
+
+.container {
+  @apply p-8;
+}
+
+/* ---------------------- */
+/* Info               */
+/* ---------------------- */
+
 .info {
-    @apply 
-    text-center
+  @apply text-center;
+}
+
+.info--image {
+  @apply block
+  w-[100%]
+  rounded-xl;
 }
 
 .info--fullname {
-    @apply 
-    font-bold 
+  @apply font-bold
     text-4xl 
-    mt-4 p-8
+    mt-4 pt-4;
 }
 
 .info--role {
-    @apply 
-    font-normal 
+  @apply font-normal 
     text-[#f3bf99] 
-    mt-0
+    text-sm
+    mt-0;
 }
 
 .info--link {
-    @apply 
-    text-[#dcdcdc] 
-    no-underline
+  @apply text-[#dcdcdc] 
+    text-sm
+    no-underline;
 }
 
 .info--icon {
-    @apply
-    mr-2
+  @apply mr-2;
 }
 
 .info--buttons {
-    @apply
-    flex
+  @apply flex
     flex-row
     items-center
-    justify-evenly
-    px-8
-    py-0
+    justify-between
+    px-7
+    py-0;
 }
 
+/* ---------------------- */
+/* Buttons                */
+/* ---------------------- */
+
 .btn {
-    @apply 
-    w-[115px] 
+  @apply w-[115px] 
     text-base 
-    font-medium 
+    font-medium
+    mt-4
     px-2 py-3 
     shadow-xl 
     rounded-md 
     cursor-pointer
-    hover:brightness-90
+    hover:brightness-90;
 }
 
 .btn--email {
-    @apply
-    bg-[#f5f5f5]
+  @apply bg-[#f5f5f5]
+  text-[#161619];
 }
 
 .btn--linkedin {
-    @apply
-    bg-[#5093e2]
-    
+  @apply bg-[#5093e2];
 }
 
+/* ---------------------- */
+/* About               */
+/* ---------------------- */
 
+.sub {
+  @apply mt-6 ml-4 mr-4;
+}
+
+.sub--head {
+  @apply text-3xl 
+  font-semibold;
+}
+
+.sub--paragraph {
+  @apply text-base
+  mt-2;
+}
+
+/* ---------------------- */
+/* footer             */
+/* ---------------------- */
+
+.footer {
+  @apply flex
+  flex-row
+  justify-evenly
+  items-center
+  mt-1
+  p-4
+  bg-[#161619]
+  rounded-b-3xl;
+}
+
+.footer--icon {
+  @apply size-8
+  text-[#918e9b]
+  hover:brightness-125;
+}
