@@ -6,7 +6,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="footer">
-      <a href="https://github.com/" target="_blank">
+      <a href="https://github.com/UdeepaSandakal" target="_blank">
         <FontAwesomeIcon icon={faGithub} className="footer--icon" />
       </a>
 
